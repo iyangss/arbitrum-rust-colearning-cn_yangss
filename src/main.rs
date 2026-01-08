@@ -13,7 +13,8 @@ sol! {
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     // Set up the HTTP transport which is consumed by the RPC client.
-    let rpc_url = "https://arbitrum-sepolia-rpc.publicnode.com".parse()?;
+    // let rpc_url = "https://arbitrum-sepolia-rpc.publicnode.com".parse()?;
+    let rpc_url = "https://ethereum-sepolia.rpc.subquery.network/public".parse()?;
 
     // Create a provider with the HTTP transport using the `reqwest` crate.
     let provider = ProviderBuilder::new().connect_http(rpc_url);
@@ -24,7 +25,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
 
     // Instantiate the contract instance.
-    let weth = address!("0x3f1f78ed98cd180794f1346f5bd379d5ec47de90");
+    let weth = address!("0x33e42f1f6ec71b27f5b31b750ebf39c733828827");
     let contract = HelloWeb3::new(weth, provider); 
  
     let out = contract.hello_web3().call().await?; 
