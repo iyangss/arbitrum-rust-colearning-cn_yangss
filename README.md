@@ -19,3 +19,12 @@
    ```
 
 1. 运行结果 ![Get Balance](screenshot/task2-get_balance.png) ![Balance](screenshot/task2-address_balance.png)
+
+## Task-3: 计算 Arbitrum 转账 Gas 费用
+
+1. codes
+
+   ```Rust
+      // examples/task3-evaluate_gas/main.rs
+      cargo run --example task3-evaluate_gas
+   ```
