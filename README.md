@@ -38,5 +38,15 @@
       // Sent transaction: 0xfb741ce3a93973455dd76abb87833a2363bd9e954a193d5baa221728697e378f
       cargo run --example task4-transaction
    ```
-2. 运行结果 ![Transaction](screenshot/task4-transaction.png)
+2. 交易结果 ![Transaction](screenshot/task4-result.png)
 3. Output ![Output](screenshot/task4-output.png)
+
+## Task-5: 调用 Arbitrum 上的简单合约
+
+1. codes
+   ```Rust
+      // examples/task5-call_contract/main.rs
+      cargo run --example task5-call_contract
+   ```
+1. 合约某些参数 ![Call Contract](screenshot/task5-erc20-properties.png)
+1. Output ![Output](screenshot/task5-output.png)
